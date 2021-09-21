@@ -1,7 +1,5 @@
 body {
   overflow-x: hidden;
-  background-image: url('../images/fine.jpg');
-  background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -13,7 +11,7 @@ nav {
   box-shadow: 2px 2px 8px grey;
 }
 
-footer a {
+.fixed-bottom a {
   text-decoration: none !important;
   color: #fff !important;
 }
