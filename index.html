@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/excel.png">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
         <!--font awesome-->
     <link href="font/css/all.css" rel="stylesheet">
     <!-- Boostrap csss-->
@@ -309,7 +310,7 @@
                             <input type="email" class="form-control shadow-none" id="email" placeholder="Enter Email">
                         </div>
                         <div class="form-group mb-4 password1">
-                            <input type="password" class="form-control shadow-none" id="password2" placeholder="Enter Password"><i class="far fa-eye"></i>
+                            <input type="password" class="form-control shadow-none" id="password" placeholder="Enter Password"><img class="bi-eye" id="togglePassword" src="images/eye-slash.svg">
                         </div>
 
                         <a href="#" class="btn btn-block btn-primary mb-3 btnReg">Create Account</a>
@@ -343,7 +344,18 @@
 
 
 
-    
+  <script>
+      const togglePassword = document.querySelector('#togglePassword');
+const password = document.querySelector('#password');
+
+togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye / eye slash icon
+    this.classList.toggle('bi-eye');
+});
+  </script> 
 
 <script src="js/jquery.min.js"></script>
    <!-- Popper JS -->

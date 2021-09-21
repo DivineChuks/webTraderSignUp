@@ -46,10 +46,11 @@ h5 {
   border: 1px solid #cccccc;
 }
 
-.far.fa-eye {
+img {
   position: absolute;
   top: 84%;
   right: 12%;
+  cursor: pointer;
 }
 
 .warning-section {
