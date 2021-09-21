@@ -46,8 +46,8 @@ h5 {
 
 .eye {
   position: absolute;
-  top: 85%;
-  right: 14%;
+  top: 84%;
+  right: 11%;
   cursor: pointer;
 }
 
@@ -87,8 +87,16 @@ footer {
     display: none;
   }
 
-  .copy p {
+  .copy small {
     font-size: 11.5px;
-    padding: 0;
   }
+
+
+.eye {
+  position: absolute;
+  top: 85%;
+  right: 15%;
+  cursor: pointer;
+}
+
 }
