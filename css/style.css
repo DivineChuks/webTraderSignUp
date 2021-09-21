@@ -84,8 +84,7 @@ footer {
     padding-top: 5px !important;
   }
   .copy a {
-    font-size: 12px;
-    padding-top: 5 !important;
+    display: none;
   }
 
   .copy p {
